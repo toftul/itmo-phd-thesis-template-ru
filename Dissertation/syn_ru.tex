@@ -9,75 +9,42 @@
     \label{fig:my_label2}
 \end{figure}
 
-\pdfbookmark{Общая характеристика работы}{characteristic}             % Закладка pdf
-\section*{Общая характеристика работы}
+\paragraph*{Актуальность}
 
-\newcommand{\actuality}{\pdfbookmark[1]{Актуальность}{actuality}\underline{\textbf{\actualityTXT}}}
-\newcommand{\progress}{\pdfbookmark[1]{Разработанность темы}{progress}\underline{\textbf{\progressTXT}}}
-\newcommand{\aim}{\pdfbookmark[1]{Цели}{aim}\underline{{\textbf\aimTXT}}}
-\newcommand{\tasks}{\pdfbookmark[1]{Задачи}{tasks}\underline{\textbf{\tasksTXT}}}
-\newcommand{\aimtasks}{\pdfbookmark[1]{Цели и задачи}{aimtasks}\aimtasksTXT}
-\newcommand{\novelty}{\pdfbookmark[1]{Научная новизна}{novelty}\underline{\textbf{\noveltyTXT}}}
-\newcommand{\influence}{\pdfbookmark[1]{Практическая значимость}{influence}\underline{\textbf{\influenceTXT}}}
-\newcommand{\methods}{\pdfbookmark[1]{Методология и методы исследования}{methods}\underline{\textbf{\methodsTXT}}}
-\newcommand{\defpositions}{\pdfbookmark[1]{Положения, выносимые на защиту}{defpositions}\underline{\textbf{\defpositionsTXT}}}
-\newcommand{\reliability}{\pdfbookmark[1]{Достоверность}{reliability}\underline{\textbf{\reliabilityTXT}}}
-\newcommand{\probation}{\pdfbookmark[1]{Апробация}{probation}\underline{\textbf{\probationTXT}}}
-\newcommand{\contribution}{\pdfbookmark[1]{Личный вклад}{contribution}\underline{\textbf{\contributionTXT}}}
-\newcommand{\publications}{\pdfbookmark[1]{Публикации}{publications}\underline{\textbf{\publicationsTXT}}}
-
-\input{common/characteristic} % Характеристика работы по структуре во введении и в автореферате не отличается (ГОСТ Р 7.0.11, пункты 5.3.1 и 9.2.1), потому её загружаем из одного и того же внешнего файла, предварительно задав форму выделения некоторым параметрам
-
-%Диссертационная работа была выполнена при поддержке грантов \dots
-
-%\underline{\textbf{Объем и структура работы.}} Диссертация состоит из~введения,
-%четырех глав, заключения и~приложения. Полный объем диссертации
-%\textbf{ХХХ}~страниц текста с~\textbf{ХХ}~рисунками и~5~таблицами. Список
-%литературы содержит \textbf{ХХX}~наименование.
-
-\pdfbookmark{Содержание работы}{description}                          % Закладка pdf
-\section*{Содержание работы}
-Во \underline{\textbf{введении}} обосновывается актуальность
-исследований, проводимых в~рамках данной диссертационной работы,
-приводится обзор научной литературы по~изучаемой проблеме,
-формулируется цель, ставятся задачи работы, излагается научная новизна
-и практическая значимость представляемой работы. В~последующих главах
-сначала описывается общий принцип, позволяющий \dots, а~потом идёт
-апробация на частных примерах: \dots  и~\dots.
+\paragraph*{Цель исследования}
+\paragraph*{Научные задачи}
+\paragraph*{Основные положения, выносимые на защиту}
+\paragraph*{Научная новизна}
+\paragraph*{Практическая значимость}
+\paragraph*{Достоверность}
+\paragraph*{Аппробация работы}
+\paragraph*{Личный вклад автора}
+\paragraph*{Публикации}
+\paragraph*{Объём и структура работы}
+Диссертация состоит из~введения,
+\formbytotal{totalchapter}{глав}{ы}{}{},
+заключения и
+\formbytotal{totalappendix}{приложен}{ия}{ий}{}.
+%% на случай ошибок оставляю исходный кусок на месте, закомментированным
+%Полный объём диссертации составляет  \ref*{TotPages}~страницу
+%с~\totalfigures{}~рисунками и~\totaltables{}~таблицами. Список литературы
+%содержит \total{citenum}~наименований.
+%
+Полный объём диссертации составляет
+\formbytotal{TotPages}{страниц}{у}{ы}{}, включая
+\formbytotal{totalcount@figure}{рисун}{ок}{ка}{ков} и
+\formbytotal{totalcount@table}{таблиц}{у}{ы}{}.
+Список литературы содержит
+\formbytotal{citenum}{наименован}{ие}{ия}{ий}.
 
 
-\underline{\textbf{Первая глава}} посвящена \dots
+\newpage
+\section*{Основное содержание работы}
 
-
-Формулы в строку без номера добавляются так:
-\[
-    \lambda_{T_s} = K_x\frac{d{x}}{d{T_s}}, \qquad
-    \lambda_{q_s} = K_x\frac{d{x}}{d{q_s}},
-\]
-
-\underline{\textbf{Вторая глава}} посвящена исследованию
-
-\underline{\textbf{Третья глава}} посвящена исследованию
-
-Можно сослаться на свои работы в автореферате. Для этого в файле
-\verb!Synopsis/setup.tex! необходимо присвоить положительное значение
-счётчику \verb!\setcounter{usefootcite}{1}!. В таком случае ссылки на
-работы других авторов будут подстрочными.
-Изложенные в третьей главе результаты опубликованы в~\cite{vakbib1, vakbib2}.
-Использование подстрочных ссылок внутри таблиц может вызывать проблемы.
-
-В \underline{\textbf{четвертой главе}} приведено описание
-
-\FloatBarrier
-\pdfbookmark{Заключение}{conclusion}                                  % Закладка pdf
-В \underline{\textbf{заключении}} приведены основные результаты работы, которые заключаются в следующем:
-\input{common/concl}
-
-\pdfbookmark{Литература}{bibliography}                                % Закладка pdf
-При использовании пакета \verb!biblatex! список публикаций автора по теме
-диссертации формируется в разделе <<\publications>>\ файла
-\verb!common/characteristic.tex!  при помощи команды \verb!\nocite!
-
+%\section*{Список публикаций}
+%%
+%% Список публикаций
+%%
 \ifdefmacro{\microtypesetup}{\microtypesetup{protrusion=false}}{} % не рекомендуется применять пакет микротипографики к автоматически генерируемому списку литературы
 \urlstyle{rm}                               % ссылки URL обычным шрифтом
 % Реализация пакетом biblatex через движок biber
