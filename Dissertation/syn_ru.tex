@@ -13,7 +13,6 @@
 \end{figure}
 
 
-
 \paragraph*{Актуальность.}
 
 \paragraph*{Цель исследования.}
@@ -23,12 +22,20 @@
 
 
 \paragraph*{Основные положения, выносимые на защиту.}
+\begin{enumerate}
+    \item \statementOneRU
+    \item \statementTwoRU 
+\end{enumerate}
+
 \paragraph*{Научная новизна.}
+
+\paragraph*{Теоретическая значимость.}
 \paragraph*{Практическая значимость.}
 \paragraph*{Достоверность.}
 \paragraph*{Аппробация работы.}
 \paragraph*{Личный вклад автора.}
-\paragraph*{Публикации.}
+
+
 \paragraph*{Объём и структура работы.}
 Диссертация состоит из~введения,
 \formbytotal{totalchapter}{глав}{ы}{}{},
@@ -47,75 +54,54 @@
 \formbytotal{citenum}{наименован}{ие}{ия}{ий}.
 
 
+
+
 \newpage
 \section*{Основное содержание работы}
 
+В Главе~\ref{ch:ch1}...
+
+\section*{Публикации автора по теме диссертации}
+
+
+Основные результаты по теме диссертации изложены в \theAllMyPapers~публикациях. Из них
+%4 изданы в журналах, рекомендованных ВАК, 
+\theScopusPapers~опубликована в изданиях, индексируемых в базе цитирования Scopus. 
+%Также имеется 1 свидетельство о государственной регистрации программ для ЭВМ.
+
+В международных изданиях, индексируемых в базе данных Scopus:
+\begin{refsection}[biblio/own.bib]
+\nocite{*}
+\printbibliography[
+    keyword=scopus,
+    %title={В международных изданиях, индексируемых в базе данных Scopus}, 
+    %heading=subbibliography,
+    heading=none,
+    resetnumbers=true
+]
+\end{refsection}
 
 
 
-%\section*{Список публикаций}
-%%
-%% Список публикаций
-%%
-\ifdefmacro{\microtypesetup}{\microtypesetup{protrusion=false}}{} % не рекомендуется применять пакет микротипографики к автоматически генерируемому списку литературы
-\urlstyle{rm}                               % ссылки URL обычным шрифтом
-% Реализация пакетом biblatex через движок biber
-% Цитирования.
-%  * Порядок перечисления определяет порядок в библиографии (только внутри подраздела, если `\insertbiblioauthorgrouped`).
-%  * Если не соблюдать порядок "как для \printbibliography", нумерация в `\insertbiblioauthor` будет кривой.
-%  * Если цитировать каждый источник отдельной командой --- найти некоторые ошибки будет проще.
-%
-%% authorvak
-\nocite{vakbib1}%
-\nocite{vakbib2}%
-%
-%% authorwos
-\nocite{wosbib1}%
-%
-%% authorscopus
-\nocite{scbib1}%
-%
-%% authorpathent
-\nocite{patbib1}%
-%
-%% authorprogram
-\nocite{progbib1}%
-%
-%% authorconf
-\nocite{confbib1}%
-\nocite{confbib2}%
-%
-%% authorother
-\nocite{bib1}%
-\nocite{bib2}%
-
-\insertbiblioauthorgrouped
-
-% \ifnum \totvalue{citeexternal}>0
-%     \begin{refcontext}[labelprefix=A]
-%         \ifnum \value{bibgrouped}>0
-%             \insertbiblioauthorgrouped    % Вывод всех работ автора, сгруппированных по источникам
-%         \else
-%             \insertbiblioauthor      % Вывод всех работ автора
-%         \fi
-%     \end{refcontext}
-% \else
-%     \ifnum \value{bibgrouped}>0
-%         \insertbiblioauthorgrouped    % Вывод всех работ автора, сгруппированных по источникам
-%     \else
-%         \insertbiblioauthor      % Вывод всех работ автора
-%     \fi
-% \fi
-
-%  \insertbiblioauthorimportant  % Вывод наиболее значимых работ автора (определяется в файле characteristic во второй section)
-\begin{refcontext}[labelprefix={}]
-    \insertbiblioexternal            % Вывод списка литературы, на которую ссылались в тексте автореферата
-\end{refcontext}
-% Невидимый библиографический список для подсчёта количества внешних публикаций
-% Используется, чтобы убрать приставку "А" у работ автора, если в автореферате нет
-% цитирований внешних источников.
-\printbibliography[heading=nobibheading, section=0, env=countexternal, keyword=biblioexternal, resetnumbers=true]%
-
-
-\ifdefmacro{\microtypesetup}{\microtypesetup{protrusion=true}}{}
-\urlstyle{tt}                               % возвращаем установки шрифта ссылок URL
+В международных изданиях, индексируемых в базе данных Web of Science:
+\begin{refsection}[biblio/own.bib]
+\nocite{*}
+\printbibliography[
+    keyword=wos,
+    %title={В международных изданиях, индексируемых в базе данных Web of Science}, 
+    %heading=subbibliography,
+    heading=none,
+    resetnumbers=true
+]
+\end{refsection}
+Список всех публикаций автора по теме диссертации:
+\begin{refsection}[biblio/own.bib]
+\nocite{*}
+\printbibliography[
+    keyword=own,
+    %title={Список всех публикаций автора по теме диссертации}, 
+    %heading=subbibliography,
+    heading=none,
+    resetnumbers=true
+]
+\end{refsection}

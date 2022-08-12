@@ -12,6 +12,10 @@
 \paragraph*{Теоретическая и практическая значимость работы.}
 
 \paragraph*{Положения выносимые на защиту.}
+\begin{enumerate}
+    \item \statementOneRU
+    \item \statementTwoRU 
+\end{enumerate}
 
 \paragraph*{Апробация работы.}
 
@@ -19,7 +23,19 @@
 
 \paragraph*{Внедрение результатов работы.}
 
-\paragraph*{Публикации.}
+\paragraph*{Публикации.} Список всех публикаций автора по теме диссертации:
+\begin{refsection}[biblio/own.bib]
+\nocite{*}
+\printbibliography[
+    keyword=own,
+    %title={Список всех публикаций автора по теме диссертации}, 
+    %heading=subbibliography,
+    heading=none,
+    resetnumbers=true
+]
+\end{refsection}
+
+
 
 \paragraph*{Структура и объем диссертации. }
 Диссертация состоит из~введения,
@@ -38,22 +54,6 @@
 Список литературы содержит
 \formbytotal{citenum}{наименован}{ие}{ия}{ий}.
 
-% \newcommand{\actuality}{}
-% \newcommand{\progress}{}
-% \newcommand{\aim}{{\textbf\aimTXT}}
-% \newcommand{\tasks}{\textbf{\tasksTXT}}
-% \newcommand{\novelty}{\textbf{\noveltyTXT}}
-% \newcommand{\influence}{\textbf{\influenceTXT}}
-% \newcommand{\methods}{\textbf{\methodsTXT}}
-% \newcommand{\defpositions}{\textbf{\defpositionsTXT}}
-% \newcommand{\reliability}{\textbf{\reliabilityTXT}}
-% \newcommand{\probation}{\textbf{\probationTXT}}
-% \newcommand{\contribution}{\textbf{\contributionTXT}}
-% \newcommand{\publications}{\textbf{\publicationsTXT}}
-
-%\input{common/characteristic} % Характеристика работы по структуре во введении и в автореферате не отличается (ГОСТ Р 7.0.11, пункты 5.3.1 и 9.2.1), потому её загружаем из одного и того же внешнего файла, предварительно задав форму выделения некоторым параметрам
-
-%\textbf{Объем и структура работы.} 
 
 \begin{figure}
     \centering

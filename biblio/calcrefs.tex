@@ -1,0 +1,44 @@
+% count all your papers (keyword=own)
+\begin{refsection}[biblio/own.bib]
+    \nocite{*} 
+    \newcounter{AllMyPapers}  % to use in the text write \theAllMyPapers
+    \renewbibmacro*{finentry}{\stepcounter{AllMyPapers}\finentry}
+    % https://tex.stackexchange.com/a/404319
+    \setbox0\vbox{\printbibliography[keyword=own]}
+\end{refsection}
+
+% keyword=wos
+\begin{refsection}[biblio/own.bib]
+    \nocite{*} 
+    \newcounter{WosPapers}  % to use in the text write \theWosPapers
+    \renewbibmacro*{finentry}{\stepcounter{WosPapers}\finentry}
+    % https://tex.stackexchange.com/a/404319
+    \setbox0\vbox{\printbibliography[keyword=wos]}
+\end{refsection}
+
+% keyword=vak
+\begin{refsection}[biblio/own.bib]
+    \nocite{*} 
+    \newcounter{VakPapers}  % to use in the text write \theVakPapers
+    \renewbibmacro*{finentry}{\stepcounter{VakPapers}\finentry}
+    % https://tex.stackexchange.com/a/404319
+    \setbox0\vbox{\printbibliography[keyword=vak]}
+\end{refsection}
+
+% keyword=scopus
+\begin{refsection}[biblio/own.bib]
+    \nocite{*} 
+    \newcounter{ScopusPapers}  % to use in the text write \theScopusPapers
+    \renewbibmacro*{finentry}{\stepcounter{ScopusPapers}\finentry}
+    % https://tex.stackexchange.com/a/404319
+    \setbox0\vbox{\printbibliography[keyword=scopus]}
+\end{refsection}
+
+% keyword=conf
+\begin{refsection}[biblio/own.bib]
+    \nocite{*} 
+    \newcounter{ConfNum}  % to use in the text write \theConfNum
+    \renewbibmacro*{finentry}{\stepcounter{ConfNum}\finentry}
+    % https://tex.stackexchange.com/a/404319
+    \setbox0\vbox{\printbibliography[keyword=conf]}
+\end{refsection}
