@@ -1,6 +1,6 @@
 # Шаблон аспиранской диссертации в Университете ИТМО в LaTeX
 
-Это не оффициальный шаблон. Отлично работает в [Overleaf](https://www.overleaf.com/). 
+Это не оффициальный шаблон. Смотри пример компиляции в [Overleaf](https://www.overleaf.com/read/dsmpjwbcyvhk).
 
 Если вы пишете диссертацию на английском языке, то сущетсвует [toftul/itmo-phd-thesis-template-en](https://github.com/toftul/itmo-phd-thesis-template-en).
 
