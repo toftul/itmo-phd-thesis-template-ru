@@ -53,6 +53,15 @@
         url = {https://doi.org/10.1103/PhysRevLett.123.183901},
         doi = {10.1103/PhysRevLett.123.183901},
 }
+
+%Sorry for this but this works
+@article{metanano2021,
+        keywords = {conf},  % <--- here!
+	author = {\textbf{METANANO}},
+	year={2021},
+	journal = {13-17 September 2021 Saint Petersburg, Russia (Online)},
+	title = {{Two talks: High-Q states in acoustic apple-shaped resonators., Nonlinear circular dichroism in Mie-resonant nanoparticle dimers}}
+}
 ```
 
 ### Остальное
