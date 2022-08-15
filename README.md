@@ -4,6 +4,10 @@
 
 Если вы пишете диссертацию на английском языке, то сущетсвует [toftul/itmo-phd-thesis-template-en](https://github.com/toftul/itmo-phd-thesis-template-en).
 
+Видео инструкция на YouTube:
+
+[<img src="https://wiki.physics.itmo.ru/images/3/31/%D0%94%D0%B8%D1%81%D1%81%D0%B5%D1%80_%D0%B2_%D1%82%D0%B5%D1%85%D0%B5.png" width="50%">](https://youtu.be/ghJgTtJuJPE "Кандидатская диссертация в LaTeX. Шаблон и инструкция")
+
 ## Зачем это
 
 Есть оффициальный шаблон на сайте [диссовета ИТМО](https://dissovet.itmo.ru/index.php?main=110), что явлется форком другого известного шаблона [AndreyAkinshin/Russian-Phd-LaTeX-Dissertation-Template](https://github.com/AndreyAkinshin/Russian-Phd-LaTeX-Dissertation-Template). 
