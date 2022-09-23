@@ -42,7 +42,12 @@
 \ifnumequal{\value{contnumfig}}{1}{}{\counterwithout{figure}{chapter}}
 \ifnumequal{\value{contnumtab}}{1}{}{\counterwithout{table}{chapter}}
 
+\renewcommand{\figurename}{Рисунок}
+\renewcommand{\tablename}{Таблица}
 \include{Dissertation/syn_ru} % реферат на русском
+
+\renewcommand{\figurename}{Figure}
+\renewcommand{\tablename}{Table}
 \include{Dissertation/syn_en} % реферат на английском
 \include{Dissertation/introduction}    % Введение
 
