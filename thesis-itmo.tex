@@ -49,7 +49,14 @@
 \renewcommand{\figurename}{Figure}
 \renewcommand{\tablename}{Table}
 \include{Dissertation/syn_en} % реферат на английском
+
+
+\renewcommand{\figurename}{Рисунок}
+\renewcommand{\tablename}{Таблица}
+
+
 \include{Dissertation/introduction}    % Введение
+
 
 \ifnumequal{\value{contnumfig}}{1}{\counterwithout{figure}{chapter}
 }{\counterwithin{figure}{chapter}}
