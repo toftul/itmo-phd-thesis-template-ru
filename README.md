@@ -80,6 +80,7 @@
 - Используйте [texstudio](https://www.texstudio.org/)
 - Убедитесь, что установлен `biber`
 - Измените движок библиографии с `bibtex` на `biber`
+- Если не помогло, то попробуйте орядок компиляции `PdfLaTeX` + `Biber` + `PdfLaTeX` + `PdfLaTeX`
 
 ### Остальное
 
